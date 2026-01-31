@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("images/white.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    border: 0.5px solid;
+    border-radius: 10px;
+    padding: 35px 35px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: 5px 5px 4px rgb(61, 60, 60);
+}
+
+.container h1 {
+    font-size: 25px;
+    margin-block: 8px;
+}
+
+.passBox {
+    background-color: whitesmoke;
+    outline: none;
+    padding: 10px 45px 10px 12px;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-block: 8px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.row {
+    display: flex;
+    margin-block: 12px;
+}
+
+.row p,
+.row label {
+    flex-basis: 100%;
+    font-size: 18px;
+}
+
+.row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.gentBtn {
+    border-radius: 4px;
+    background-color: rgb(167, 0, 0);
+    padding: 12px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-block: 9px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.gentBtn:hover {
+    background-color: rgb(96, 86, 132);
+}
+
+.weak {
+    color: rgb(0, 154, 13);
+    font-weight: bolder;
+}
+
+.weak::before {
+    content: "●";
+    color: rgb(0, 154, 13);
+}
+
+.medium {
+    color: rgb(20, 56, 184);
+    font-weight: bolder;
+}
+
+.medium::before {
+    content: "●";
+    color: rgb(20, 56, 184);
+}
+
+.decent {
+    color: rgb(238, 120, 52);
+    font-weight: bolder;
+}
+
+.decent::before {
+    content: "●";
+    color: rgb(238, 120, 52);
+}
+
+.strong {
+    color: rgb(185, 1, 1);
+    font-weight: bolder;
+}
+
+.strong::before {
+    content: "●";
+    color: rgb(185, 1, 1);
+}
+
+input::placeholder {
+    font-size: 17px;
+    color: rgb(71, 67, 67);
+}
+
+#errorText {
+    color: red;
+}
+
+.resultBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-block: 10px;
+    font-size: 20px;
+}
+
+#msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(2, 95, 2);
+}
+
+.inputslider {
+    color: rgb(73, 62, 28);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(69, 64, 83);
+}
+
+.inputbox {
+    position: relative;
+}
+
+.copy {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    pointer-events: auto;
+}
+
+.copy {
+    border: white;
+    border-radius: 1px;
+}
+
+.copy:hover {
+    background-color: rgb(230, 224, 224);
+}
+
+.slider {
+    -webkit-appearance: none;
+    border-radius: 8px;
+    height: 8px;
+    background-color: rgb(52, 50, 50);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.w {
+    background: rgb(0, 154, 13);
+    ;
+}
+
+.m {
+    background: rgb(20, 56, 184);
+}
+
+.d {
+    background: rgb(238, 120, 52);
+
+}
+
+.s {
+    background: rgb(185, 1, 1);
+    ;
+}
